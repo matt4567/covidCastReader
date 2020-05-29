@@ -1,6 +1,7 @@
 import csv
 import pandas as pd
 import xlrd
+from delphi_epidata import Epidata
 
 # def getMetCodes():
 #     metAreas = []
@@ -39,3 +40,12 @@ def getMetCodes():
 
 
 # print(getMetCodes()[0])
+
+def getDataForStates(state, type):
+    res = Epidata.covidcast(type, "smoothed_adj_cli", 'day', 'state', Epidata.range(20200523, 20200528),
+                            state)
+
+    # print(datetime.datetime.strptime(str(res['epidata'][0]['time_value']), '%Y%m%d'))
+    return res['epidata']
+
+# print(getDataForStates("FL", "doctor-visits"))

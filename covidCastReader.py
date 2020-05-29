@@ -19,8 +19,8 @@ states = ['AK', 'AL', 'AR', 'AS', 'AZ', 'CA', 'CO', 'CT', 'DC', 'DE', 'FL', 'GA'
 
 signalsDict = {
     "doctor-visits": "smoothed_adj_cli",
-    # "fb-survey": "smoothed_hh_cmnty_cli",
-    "fb-survey": "smoothed_cli",
+    "fb-survey": "smoothed_hh_cmnty_cli",
+    # "fb-survey": "smoothed_cli",
     "google-survey": "smoothed_cli",
     "ght": "smoothed_search"
 }
@@ -119,7 +119,7 @@ def prepWorksheet(worksheet, dates):
     for d, date in enumerate(dates):
         worksheet.write(d+1, 0, date.strftime("%d %m %Y"))
 
-# prepWorksheet(worksheet, dates)
+prepWorksheet(worksheet, dates)
 
 # print(len(metAreas))
 def prepWorksheetMetCodes(worksheet, dates):
@@ -128,7 +128,7 @@ def prepWorksheetMetCodes(worksheet, dates):
     for d, date in enumerate(dates):
         worksheet.write(d + 1, 0, date.strftime("%d %m %Y"))
 
-prepWorksheetMetCodes(worksheet, dates)
+# prepWorksheetMetCodes(worksheet, dates)
 def getDataForStates(state, type):
     res = Epidata.covidcast(type, signalsDict[type], 'day', 'state', Epidata.range(20200201, 20200528),
                             state)
@@ -148,11 +148,11 @@ def getDataForMetAreas(metCode, type):
 
 def buildUpExcel(worksheet):
     offset = 0
-    # for i, state in enumerate(states):
-    for i, metArea in enumerate(metAreas):
+    for i, state in enumerate(states):
+    # for i, metArea in enumerate(metAreas):
         try:
-            # res = getDataForStates(state, whatReading)
-            res = getDataForMetAreas(metCodesDict[metArea], whatReading)
+            res = getDataForStates(state, whatReading)
+            # res = getDataForMetAreas(metCodesDict[metArea], whatReading)
             dataList = res
             for n, data in enumerate(dataList):
                 if n == 0:
@@ -161,10 +161,10 @@ def buildUpExcel(worksheet):
                     offset = difference.days
                     # print(offset)
                 worksheet.write(n + 1+offset, i + 1, data['value'])
-            print(metCodesDict[metArea], " worked!")
+            # print(metCodesDict[metArea], " worked!")
         except:
-            print(metCodesDict[metArea])
-            # print(state)
+            # print(metCodesDict[metArea])
+            print(state)
 
 
 buildUpExcel(worksheet)
