@@ -17,6 +17,9 @@ states = ['AK', 'AL', 'AR', 'AS', 'AZ', 'CA', 'CO', 'CT', 'DC', 'DE', 'FL', 'GA'
           'NV', 'NY', 'OH', 'OK', 'OR', 'PA', 'PR', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VA', 'VI', 'VT', 'WA', 'WI',
           'WV', 'WY']
 
+metAreas, metCodesDict = utils.getMetCodes()
+
+
 signalsDict = {
     "doctor-visits": "smoothed_adj_cli",
     "fb-survey": "smoothed_hh_cmnty_cli",
@@ -34,8 +37,8 @@ def genDates(start, noDays):
         dates.append(start)
     return dates
 
-start = datetime.datetime(2020, 2, 1)
-dates = genDates(start, 117)
+# start = datetime.datetime(2020, 2, 1)
+# dates = genDates(start, 117)
 
 def getStateFromCode(stateCode):
     us_state_abbrev = {
@@ -103,15 +106,15 @@ def getStateFromCode(stateCode):
     return abbrev_us_state[stateCode]
 
 
-whatReading = input("what are we reading?: ")
+# whatReading = input("what are we reading?: ")
 # whatReading = "test"
 def openWorksheet(name):
     workbook = xlsxwriter.Workbook(name + '.xlsx')
     worksheet = workbook.add_worksheet()
     return worksheet, workbook
 
-worksheet, workbook = openWorksheet(whatReading)
-metAreas, metCodesDict = utils.getMetCodes()
+# worksheet, workbook = openWorksheet(whatReading)
+# metAreas, metCodesDict = utils.getMetCodes()
 
 def prepWorksheet(worksheet, dates):
     for i, state in enumerate(states):
@@ -119,7 +122,7 @@ def prepWorksheet(worksheet, dates):
     for d, date in enumerate(dates):
         worksheet.write(d+1, 0, date.strftime("%d %m %Y"))
 
-prepWorksheet(worksheet, dates)
+# prepWorksheet(worksheet, dates)
 
 # print(len(metAreas))
 def prepWorksheetMetCodes(worksheet, dates):
@@ -129,15 +132,15 @@ def prepWorksheetMetCodes(worksheet, dates):
         worksheet.write(d + 1, 0, date.strftime("%d %m %Y"))
 
 # prepWorksheetMetCodes(worksheet, dates)
-def getDataForStates(state, type):
-    res = Epidata.covidcast(type, signalsDict[type], 'day', 'state', Epidata.range(20200201, 20200528),
+def getDataForStates(state, type, dateToday, signal):
+    res = Epidata.covidcast(type, signal, 'day', 'state', Epidata.range(20200201, dateToday),
                             state)
 
     # print(datetime.datetime.strptime(str(res['epidata'][0]['time_value']), '%Y%m%d'))
     return res['epidata']
 
-def getDataForMetAreas(metCode, type):
-    res = Epidata.covidcast(type, signalsDict[type], 'day', 'msa', Epidata.range(20200201, 20200528),
+def getDataForMetAreas(metCode, type, dateToday, signal):
+    res = Epidata.covidcast(type, signal, 'day', 'msa', Epidata.range(20200201, dateToday),
                             metCode)
 
     # print(datetime.datetime.strptime(str(res['epidata'][0]['time_value']), '%Y%m%d'))
@@ -146,13 +149,12 @@ def getDataForMetAreas(metCode, type):
 
 
 
-def buildUpExcel(worksheet):
+def buildUpExcelForStates(worksheet, whatReading, dateToday, signal):
     offset = 0
     for i, state in enumerate(states):
     # for i, metArea in enumerate(metAreas):
         try:
-            res = getDataForStates(state, whatReading)
-            # res = getDataForMetAreas(metCodesDict[metArea], whatReading)
+            res = getDataForStates(state, whatReading, dateToday, signal)
             dataList = res
             for n, data in enumerate(dataList):
                 if n == 0:
@@ -166,14 +168,31 @@ def buildUpExcel(worksheet):
             # print(metCodesDict[metArea])
             print(state)
 
+def buildUpExcelForMetro(worksheet, whatReading, dateToday, signal):
+    offset = 0
+    for i, metArea in enumerate(metAreas):
+        try:
+            res = getDataForMetAreas(metCodesDict[metArea], whatReading, dateToday, signal)
+            dataList = res
+            for n, data in enumerate(dataList):
+                if n == 0:
+                    startDate = datetime.datetime.strptime(str(res[0]['time_value']), '%Y%m%d')
+                    difference = startDate - datetime.datetime(2020, 2, 1)
+                    offset = difference.days
+                    # print(offset)
+                worksheet.write(n + 1 + offset, i + 1, data['value'])
+            print(metCodesDict[metArea], " worked!")
+        except:
+            print(metCodesDict[metArea])
 
-buildUpExcel(worksheet)
+
+# buildUpExcel(worksheet)
 # signals = ['raw_cli', 'raw_ili', 'raw_wcli', 'raw_wili', 'raw_hh_cmnty_cli', 'raw_nohh_cmnty_cli', 'smoothed_cli']
 # for sig in signals:
 #     print(getData('FL', sig)[-1])
 # for i, metArea in enumerate(metAreas):
 #     print(metArea, getDataForMetAreas(metCodesDict[metArea], "fb-survey"))
-workbook.close()
+# workbook.close()
 
 
 
