@@ -13,7 +13,7 @@ def getDataFromCovidCast():
     dates = covidCastReader.genDates(start, numDays)
     metAreas, metCodesDict = utils.getMetCodes()
     for i, data in enumerate(dataToPull):
-        if i != 2: continue
+
         worksheet, workbook = covidCastReader.openWorksheet(data)
         if (location[i] == 'state'):
             covidCastReader.prepWorksheet(worksheet, dates)
