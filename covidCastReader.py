@@ -20,13 +20,13 @@ states = ['AK', 'AL', 'AR', 'AS', 'AZ', 'CA', 'CO', 'CT', 'DC', 'DE', 'FL', 'GA'
 metAreas, metCodesDict = utils.getMetCodes()
 
 
-signalsDict = {
-    "doctor-visits": "smoothed_adj_cli",
-    "fb-survey": "smoothed_hh_cmnty_cli",
-    # "fb-survey": "smoothed_cli",
-    "google-survey": "smoothed_cli",
-    "ght": "smoothed_search"
-}
+# signalsDict = {
+#     "doctor-visits": "smoothed_adj_cli",
+#     "fb-survey": "smoothed_hh_cmnty_cli",
+#     # "fb-survey": "smoothed_cli",
+#     "google-survey": "smoothed_cli",
+#     "ght": "smoothed_search"
+# }
 
 def genDates(start, noDays):
     dates = []

@@ -4,7 +4,9 @@ import utils
 def getDataFromCovidCast():
     dataToPull = ['doctor-visitsState', 'fb-surveyState', 'fb-survey-communityState', 'ghtState', 'doctor-visitsMetro', 'fb-surveyMetro']
     address = ['doctor-visits', 'fb-survey', 'fb-survey', 'ght', 'doctor-visits', 'fb-survey']
+    # signal = ['raw_cli', 'raw_cli', 'raw_hh_cmnty_cli', 'raw_search', 'raw_adj_cli', 'raw_cli']
     signal = ['smoothed_adj_cli', 'smoothed_cli', 'smoothed_hh_cmnty_cli', 'smoothed_search', 'smoothed_adj_cli', 'smoothed_cli']
+
     location = ['state', 'state', 'state', 'state', 'metro', 'metro']
 
     start = datetime.datetime(2020, 2, 1)
