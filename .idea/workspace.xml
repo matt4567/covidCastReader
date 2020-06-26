@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a591e42-5780-46ad-950f-3a579c57d573" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/doctor-visitsMetro.xlsx" afterPath="$PROJECT_DIR$/22.06/doctor-visitsMetro.xlsx" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/doctor-visitsState.xlsx" afterPath="$PROJECT_DIR$/22.06/doctor-visitsState.xlsx" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fb-survey-communityState.xlsx" afterPath="$PROJECT_DIR$/22.06/fb-survey-communityState.xlsx" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fb-surveyMetro.xlsx" afterPath="$PROJECT_DIR$/22.06/fb-surveyMetro.xlsx" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fb-surveyState.xlsx" afterPath="$PROJECT_DIR$/22.06/fb-surveyState.xlsx" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ghtState.xlsx" afterPath="$PROJECT_DIR$/22.06/ghtState.xlsx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/doctor-visitsMetro.xlsx" afterPath="$PROJECT_DIR$/26.06/doctor-visitsMetro.xlsx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/doctor-visitsState.xlsx" afterPath="$PROJECT_DIR$/26.06/doctor-visitsState.xlsx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/fb-survey-communityState.xlsx" afterPath="$PROJECT_DIR$/26.06/fb-survey-communityState.xlsx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/fb-surveyMetro.xlsx" afterPath="$PROJECT_DIR$/26.06/fb-surveyMetro.xlsx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/fb-surveyState.xlsx" afterPath="$PROJECT_DIR$/26.06/fb-surveyState.xlsx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ghtState.xlsx" afterPath="$PROJECT_DIR$/26.06/ghtState.xlsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="covidCastReader.iws" />
@@ -43,8 +43,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+            <state relative-caret-position="180">
+              <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -133,8 +133,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -164,6 +162,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="28.05" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="covidCastReader" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="covidCastReader" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="26.06" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -211,18 +223,20 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/26.06" />
       <recent name="$PROJECT_DIR$/22.06" />
       <recent name="$PROJECT_DIR$/12.06" />
       <recent name="$PROJECT_DIR$/08.06" />
       <recent name="$PROJECT_DIR$/01.06" />
-      <recent name="$PROJECT_DIR$/28.05" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager" selected="Python.main">
@@ -435,6 +449,14 @@
       <option name="presentableId" value="Default" />
       <updated>1590143040727</updated>
     </task>
+    <task id="LOCAL-00001" summary="data up to 22">
+      <created>1592826407830</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1592826407830</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -471,6 +493,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="data up to 22" />
+    <option name="LAST_COMMIT_MESSAGE" value="data up to 22" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="1" />
@@ -478,6 +504,49 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/covidCastReader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1560">
+          <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/differencesBetweenDataPulledOnDifferentDates.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codes.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/covidCastReader.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -847,8 +916,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+        <state relative-caret-position="180">
+          <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
