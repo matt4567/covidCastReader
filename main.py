@@ -3,7 +3,7 @@ import covidCastReader
 import utils
 def getDataFromCovidCast():
     # dataToPull = ['doctor-visitsState', 'fb-surveyState', 'fb-survey-communityState', 'ghtState', 'doctor-visitsMetro', 'fb-surveyMetro']
-    dataToPull = ['doctor-visitsState', 'fb-surveyState', 'fb-survey-communityState', 'full_time_work_prop', 'part_time_work_prop', 'hospital-admissions']
+    dataToPull = ['doctor-visitsState', 'fb-surveyState', 'fb-survey-communityState', 'away6+hours', 'away3-6hours', 'hospital-admissions']
 
 
     # address = ['doctor-visits', 'fb-survey', 'fb-survey', 'ght', 'doctor-visits', 'fb-survey']
@@ -22,7 +22,6 @@ def getDataFromCovidCast():
     dates = covidCastReader.genDates(start, numDays)
     metAreas, metCodesDict = utils.getMetCodes()
     for i, data in enumerate(dataToPull):
-        if i < 5:continue
         worksheet, workbook = covidCastReader.openWorksheet(data)
         if (location[i] == 'state'):
             covidCastReader.prepWorksheet(worksheet, dates)

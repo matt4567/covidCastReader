@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a591e42-5780-46ad-950f-3a579c57d573" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/full_time_work_prop.xlsx" afterPath="$PROJECT_DIR$/26.06/full_time_work_prop.xlsx" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/part_time_work_prop.xlsx" afterPath="$PROJECT_DIR$/26.06/part_time_work_prop.xlsx" />
+    <list default="true" id="6a591e42-5780-46ad-950f-3a579c57d573" name="Default" comment="adding data up to 7th">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/26.06/full_time_work_prop.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/26.06/part_time_work_prop.xlsx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/doctor-visitsState.xlsx" afterPath="$PROJECT_DIR$/14.07/doctor-visitsState.xlsx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/fb-survey-communityState.xlsx" afterPath="$PROJECT_DIR$/14.07/fb-survey-communityState.xlsx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/fb-surveyState.xlsx" afterPath="$PROJECT_DIR$/14.07/fb-surveyState.xlsx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/full_time_work_prop.xlsx" afterPath="$PROJECT_DIR$/14.07/full_time_work_prop.xlsx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hospital-admissions.xlsx" afterPath="$PROJECT_DIR$/14.07/hospital-admissions.xlsx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/part_time_work_prop.xlsx" afterPath="$PROJECT_DIR$/14.07/part_time_work_prop.xlsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
     </list>
@@ -41,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
-              <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -130,7 +136,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -236,18 +241,19 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/14.07" />
       <recent name="$PROJECT_DIR$/04.07" />
       <recent name="$PROJECT_DIR$/26.06" />
       <recent name="$PROJECT_DIR$/22.06" />
       <recent name="$PROJECT_DIR$/12.06" />
-      <recent name="$PROJECT_DIR$/08.06" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager" selected="Python.main">
@@ -488,7 +494,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593184824637</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="adding data up to 7th">
+      <created>1594114083603</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1594114083603</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -530,7 +543,8 @@
     <MESSAGE value="data up to 26" />
     <MESSAGE value="Added safegraph stuff" />
     <MESSAGE value="Added safegraph stuff (actually this time)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added safegraph stuff (actually this time)" />
+    <MESSAGE value="adding data up to 7th" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding data up to 7th" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -962,7 +976,7 @@
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
