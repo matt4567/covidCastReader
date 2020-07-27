@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a591e42-5780-46ad-950f-3a579c57d573" name="Default" comment="adding data up to 7th">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/26.06/full_time_work_prop.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/26.06/part_time_work_prop.xlsx" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/doctor-visitsState.xlsx" afterPath="$PROJECT_DIR$/14.07/doctor-visitsState.xlsx" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fb-survey-communityState.xlsx" afterPath="$PROJECT_DIR$/14.07/fb-survey-communityState.xlsx" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fb-surveyState.xlsx" afterPath="$PROJECT_DIR$/14.07/fb-surveyState.xlsx" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/full_time_work_prop.xlsx" afterPath="$PROJECT_DIR$/14.07/full_time_work_prop.xlsx" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hospital-admissions.xlsx" afterPath="$PROJECT_DIR$/14.07/hospital-admissions.xlsx" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/part_time_work_prop.xlsx" afterPath="$PROJECT_DIR$/14.07/part_time_work_prop.xlsx" />
+    <list default="true" id="6a591e42-5780-46ad-950f-3a579c57d573" name="Default" comment="adding data up to 15th">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/14.07/doctor-visitsState.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/14.07/fb-survey-communityState.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/14.07/fb-surveyState.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/14.07/hospital-admissions.xlsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
     </list>
     <ignored path="covidCastReader.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -501,7 +496,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594114083603</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="adding data up to 15th">
+      <created>1594826515559</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1594826515559</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -513,7 +515,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298647" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2555066" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2555066" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -544,7 +546,8 @@
     <MESSAGE value="Added safegraph stuff" />
     <MESSAGE value="Added safegraph stuff (actually this time)" />
     <MESSAGE value="adding data up to 7th" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding data up to 7th" />
+    <MESSAGE value="adding data up to 15th" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding data up to 15th" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
